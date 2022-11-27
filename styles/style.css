@@ -2,7 +2,7 @@
     font-family: "PT Sans Narrow";
     font-size: normal;
     font-weight: 400;
-    src: url("/barbershop/fonts/ptsans-400.woff2") format("woff2");
+    src: url("/sedona/fonts/ptsans-400.woff2") format("woff2");
     font-display: swap;
 }
 
@@ -10,313 +10,86 @@
     font-family: "PT Sans Narrow";
     font-size: normal;
     font-weight: 700;
-    src: url("/barbershop/fonts/ptsans-700.woff2") format("woff2");
+    src: url("/sedona/fonts/ptsans-700.woff2") format("woff2");
     font-display: swap;
 }
 
 body {
     font-family: "PT Sans Narrow", sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    background-color: #FBF7F4;
-    color: #242424;
-}
-
-/*Кнопка*/
-.button {
-    font-family: inherit;
-    font-weight: 700;
-    background: #000000;
-    color: #FFFFFF;
-    font-size: 16px;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
+    font-size: 22px;
+    line-height: 36px;
+    background-color: #FFFFFF;;
 }
 
 /*Шапка*/
-.page-header {
-    background-color: #000000;
-    color: #FFFFFF;
-}
-
 .navigation-link {
     font-weight: 700;
-    font-size: 16px;
-    line-height: 22px;
-    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
     text-decoration: none;
-    color: #FFFFFF;
-    text-align: center;
 }
+
 /*Логотип*/
-.main-index {
-    color: #FFFFFF;
-    background-color: #000000;
-    background-image: url("/barbershop/images/interior.jpg");
-    background-size: 100% auto;
+.advantages-background {
+    background-image: url(/sedona/images/index/index-background.jpg);
     background-repeat: no-repeat;
+    background-size: 100% auto;
 }
+
+.logo {
+    width: 458px;
+    height: 352px;
+}
+
 /*Преимущества*/
-.advantages-list {
+.advantages-subtitle {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
     text-align: center;
 }
 
-.advantages-title {
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 35px;
-    text-transform: uppercase;
+.advantages-description {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 36px;
+    text-align: center;
 }
 
-.index-columns {
-    background-color: #FBF7F4;
-    color: #242424;
-    background-image: url("/barbershop/images/noisy-texture-80x80-o8-d27-c-1f1f1f-t1\ 1.png");
-}
-/*Популярные услуги*/
-.services-title {
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 35px;
-    text-transform: uppercase;
-}
-
-.services-name {
-    color: #242424;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 28px;
-    text-transform: uppercase;
-}
-
-.services-price {
-    color: #AF7842;
-    font-weight: 700;
-    font-size: 20px;
-    text-transform: uppercase;
-}
-/*Фотогалерея*/
-.gallery-title {
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 35px;
-    text-transform: uppercase;
-    color: #242424;
-}
-/*Контакты*/
-.contacts-title {
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 35px;
-    text-transform: uppercase;
-}
-
-.contacts-subtitle {
-    color: #AF7842;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 28px;
-    text-transform: uppercase;
-}
-
-.contacts-address-text {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-    font-style: normal;
-}
-
-.contacts-phone {
+/*Блок преимуществ*/
+.advantages-header {
     font-weight: 700;
     font-size: 24px;
-    line-height: 29px;
-    text-decoration-line: underline;
-    text-transform: uppercase;
-    color: #242424;
-}
-
-.contacts-schedule-item {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-}
-/*Записаться*/
-.appointment-title {
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 35px;
-    text-transform: uppercase;
-}
-
-.form-label {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 22px;
-    text-transform: uppercase;
-}
-
-.appointment-form-phone {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 22px;
-    text-transform: uppercase;
-}
-
-.appointment-form-name {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 22px;
-    text-transform: uppercase;
-}
-/*Подвал*/
-.page-footer {
-    background-color: #242424;
-    color: #FFFFFF;
-    background-image: url("/barbershop/images/noisy-texture-footer.png");
-    background-repeat: repeat;
-    font-size: 14px;
-    font-weight: 700;
-}
-
-.page-footer a {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 26px;
-    color: #FFFFFF
-}
-
-.page-footer .htmlacademy-link {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 20px;
-    color: #DBB590;
-}
-
-.footer-contacts-map-link {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 26px;
-    text-transform: uppercase;
-}
-
-.page-footer-title {
-    font-weight: 700;
-    font-size: 20px;
     line-height: 28px;
+    text-align: center;
     text-transform: uppercase;
 }
 
-.about-text {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-}
-
-/*Каталог*/
-
-.main-inner {
-    background-color: #FBF7F4;
-    background-image: url(/barbershop/images/noisy-texture-80x80-o8-d27-c-1f1f1f-t1\ 1.png);
-}
-
-/*Заголовок*/
-.inner-header-title {
-    color: #242424;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 35px;
-    text-transform: uppercase;
-}
-
-/*Хлебные крошки*/
-.breadcrumbs-link {
+.advantages-text {
     font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-    text-decoration: underline;
-    color: #242424;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
 }
 
-.breadcrumbs-link-current {
-    color: #595959;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-    text-decoration: none;
+.card-1 {
+    background-color: #81B3D2;;
 }
 
-/*Цена*/
-.catalog-filter-title {
-    color: #000000;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 28px;
-    text-transform: uppercase;
+.card-3 {
+    background: rgba(131, 179, 211, 0.12);
 }
 
-.catalog-filter-input {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-    color: #242424;
+.card-5 {
+    background: rgba(131, 179, 211, 0.2);
 }
 
-.control-label {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 22px;
-    color: #242424;
-}
-
-/*Сортировка*/
-.select-control {
-    color: #242424;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-}
-
-/*Карточки товаров*/
-.product-card-image {
-    width: 220px;
-    height: 168px;
-}
-
-.product-card-title {
-    color: #000000;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-}
-
-.product-card-price {
-    color: #814B18;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
-}
-
-.product-card-link {
-    text-decoration: none;
-    text-align: left;
-}
-
-/*Пагинация*/
-.pagination {
-    background-color: #FFFFFF;
-}
-
-.pagination-link {
+.card-1>.advantages-header {
     color: #FFFFFF;
-    background-color: #000000;
-    text-decoration: none;
-    line-height: 16px;
-    font-weight: 700;
 }
 
-.pagination-current {
-    color: #242424;
-    background-color: #FFFFFF;
+.card-1>.advantages-text {
+    color: #FFFFFF;
 }
