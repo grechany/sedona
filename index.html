@@ -4,227 +4,148 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
-    <title>Барбершоп «Бородинский»</title>
+    <link rel="stylesheet" href="/sedona/styles/style.css">
+    <title>Курорт Седона</title>
 </head>
 <body>
     <!--Шапка-->
-    <header class="page-header">
+    <header class="main-header">
         <nav class="navigation">
+            <img class="navigation-logo" src="/sedona/images/index/header-logo.svg" alt="Седона">
+            
             <ul class="navigation-list">
                 <li class="navigation-item">
-                    <a class="navigation-link" href="about.html">О нас</a>
+                    <a class="navigation-link current">Главная</a>
                 </li>
                 <li class="navigation-item">
-                    <a class="navigation-link" href="catalog.html">Каталог</a>
+                    <a class="navigation-link" href="#">О Седоне</a>
                 </li>
                 <li class="navigation-item">
-                    <a class="navigation-link" href="faq.html">Частые вопросы</a>
+                    <a class="navigation-link" href="#">Гостиницы</a>
                 </li>
             </ul>
 
-            <ul class="navigation-list navigation-user">
-                <li class="navigation-item">
-                    <a class="navigation-link" href="#">
-                        <span class="visually-hidden">Поиск</span>
+            <ul class="user-list">
+                <li class="user-item">
+                    <a class="user-link" href="#">
+                        <span class="visually-hiden">Поиск</span>
                     </a>
                 </li>
-                <li class="navigation-item">
-                    <a class="navigation-link" href="#">
-                        <span class="visually-hidden">Корзина</span>
+                <li class="user-item">
+                    <a class="user-link" href="#">
+                        <span class="visually-hiden">Избранное</span>
+                        <span class="icon">12</span>
                     </a>
                 </li>
-                <li class="navigation-item">
-                    <a class="navigation-link" href="#">
-                        <span class="visually-hidden">Вход</span>
-                    </a>
+                <li class="user-item">
+                    <a class="button" href="#">Хочу сюда!</a>
                 </li>
             </ul>
-        </nav>    
+        </nav>
     </header>
-
     <main class="main-index">
-        <!--Главный заголовок-->
-        <h1 class="visually-hidden">Барбершоп «Бородинский»</h1>
-        <!-- Лого -->
-        <img class="logo" src="images/main-logo.svg" alt="Логотип барбершопа «Бородинский»" width="367" height="152">
-        <!--Преимущества-->
-        <section class="advantages">
-            <h2 class="visually-hidden">Преимущества</h2>
-            <ul class="advantages-list">
-                <li class="advantages-item">
-                    <h3 class="advantages-title">Быстро</h2>
-                    <p class="advantages-description">Мы делаем свою работу быстро! Два часа пролетят незаметно, и вы — счастливый обладатель стильной стрижки-минутки!</p>
-                </li>
-                <li class="advantages-item">
-                    <h3 class="advantages-title">Круто</h2>
-                    <p class="advantages-description">Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.</p>
-                </li>
-                <li class="advantages-item">
-                    <h3 class="advantages-title">Дорого</h2>
-                    <p class="advantages-description">Наши мастера — профессионалы своего дела и не могут стоить дешево. к тому же, разве цена не даёт определённый статус?</p>
-                </li>
-            </ul>   
+        <h1 class="visually-hiden">Туристический город Седона</h1>
+    <!--Логотип-->
+        <div class="advantages-background">
+                <img class="logo" src="/sedona/images/index/welcome.svg" alt="Логотип Седоны">
+        </div>
+    <!--Преимущества-->
+    <section class="advantages">
+         <div class="advantages-main">
+                <p class="advantages-subtitle">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+                <p class="advantages-description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+         </div>
+    <!--Блок преимуществ-->     
+        <div class="advantages-cards">
+            <div class="card card-1">
+                <h3 class="advantages-header">Настоящий городок</h3>
+                <p class="advantages-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            </div>
+            <div class="card-photo">
+                <img class="card-img" src="/sedona/images/index/photo-1.jpg" alt="Фото города Седона">
+            </div>
+            <div class="card card-3">
+                <img class="card-svg" src="/sedona/images/index/house.svg" alt="Жильё">
+                <h3 class="advantages-header">Жильё</h3>
+                <p class="advantages-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            </div>
+            <div class="card card-4">
+                <img class="card-svg" src="/sedona/images/index/food.svg" alt="Еда">
+                <h3 class="advantages-header">Еда</h3>
+                <p class="advantages-text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+            </div>
+            <div class="card card-3">
+                <img class="card-svg" src="/sedona/images/index/present.svg" alt="Сувениры">
+                <h3 class="advantages-header">Сувениры</h3>
+                <p class="advantages-text">Не только китайского, но и настоящего местного производства!</p>
+            </div>
+            <div class="card-photo">
+                <img class="card-img" src="/sedona/images/index/photo-2.jpg" alt="Фото города Седона">
+            </div>
+            <div class="card card-1">
+                <h3 class="advantages-header">Там есть мост дьявола</h3>
+                <p class="advantages-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            </div>
+            <div class="card card-3">
+                <h3 class="advantages-header">Небольшая площадь</h3>
+                <p class="advantages-text">Все достопримечательности находятся очень близко</p> 
+            </div>
+            <div class="card card-5">
+                <h3 class="advantages-header">Красивая дорога</h3>
+                <p class="advantages-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </div>
+            <div class="card card-3">
+                <h3 class="advantages-header">Мало туристов</h3>
+                <p class="advantages-text">Большинство едет в Гранд Каньон и толпится там</p> 
+            </div>
+        </div>
+    </section>
+    <!--Поиск-->
+        <section class="search">
+            <h2 class="visually-hiden">Поиск гостиниц</h2>
+            <p class="search-title">Заинтересовались?</p>
+            <p class="search-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            <a class="button" href="#">Поиск гостиницы в Седоне</a>
         </section>
-
-    <div class="index-columns">
-
-        <!--Популярные услуги-->
-        <section class="services">
-            <h2 class="services-title">Популярные услуги</h2>
-            <ul class="services-list">
-                <li class="services-item">
-                    <span class="services-name">Стрижка машинкой</span>
-                    <b class="services-price">800 ₽</b>
-                </li>
-                <li class="services-item">
-                    <span class="services-name">Стрижка усов</span>
-                    <b class="services-price">1200 ₽</b>
-                </li>
-                <li class="services-item">
-                    <span class="services-name">Груминг</span>
-                    <b class="services-price">400 ₽</b>
-                </li>
-                <li class="services-item">
-                    <span class="services-name">Комплексная стрижка</span>
-                    <b class="services-price">2300 ₽</b>
-                </li>
-            </ul>
-            <a class="button button-all" href="#">Посмотреть все</a>
-        </section>
-        <!--Фотогалерея-->
-        <section class="gallery">
-            <h2 class="gallery-title">Фотогалерея</h2>
-            <img class="slider-image" src="images/gallery-1.jpg" alt="Примеры работ" width="390" height="250">
-            <button class="slider-button slider-prev" type="button">
-                <span class="visually-hidden">Предыдущее фото</span>
-            </button>
-            <button class="slider-button slider-next" type="button">
-                <span class="visually-hidden">Следующее фото</span>
-            </button>
-            <ol class="slider-pagination">
-                <li class="slider-pagination-item">
-                    <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                        <span class="visually-hidden">Фото 1</span>
-                    </button>
-                </li>
-                <li class="slider-pagination-item">
-                    <button class="slider-pagination-button" type="button">
-                        <span class="visually-hidden">Фото 2</span>
-                    </button>
-                </li>
-                <li class="slider-pagination-item">
-                    <button class="slider-pagination-button" type="button">
-                        <span class="visually-hidden">Фото 3</span>
-                    </button>
-                </li>
-                <li class="slider-pagination-item">
-                    <button class="slider-pagination-button" type="button">
-                        <span class="visually-hidden">Фото 4</span>
-                    </button>
-                </li>
-            </ol>
-        </section>
-
-    </div>
-    <div class="index-columns">
-        <!--Контакты-->
-        <section class="contacts">
-            <h2 class="contacts-title">Контакты</h2>
-            <h3 class="contacts-subtitle">Барбершоп «Бородинский»</h3>
-            <address class="contacts-address">
-                <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-                <a class="contacts-phone" href="tel:88005558628">8 800 555-86-28</a>
-            </address>
-            <h3 class="contacts-subtitle">Время работы</h3>
-            <ul class="contacts-schedule">
-                <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
-                <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
-            </ul>
-            <a class="button" href="#">Как проехать</a>
-            <a class="button button-feedback" href="#">Обратная связь</a>
-        </section>
-        <!--Форма записи-->
-        <section class="appointment">
-            <h2 class="appointment-title">Записаться</h2>
-            <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони.</p>
-            <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
-              <p class="appointment-form-date">
-                <span class="form-label form-label-icon">
-                  <label for="appointment-date">Дата</label>
-                  <button class="info" type="button">
-                    <span class="visually-hidden">Посмотреть дополнительную информацию</span></button>
-                </span>
-                <input type="date" id="appointment-date" name="appointment-date" placeholder="27.10.2022">
-              </p>
-              <p class="appointment-form-time">
-                <span class="form-label form-label-icon">
-                  <label for="appointment-time">Время</label>
-                  <button class="info" type="button">
-                    <span class="visually-hidden">Посмотреть дополнительную информацию</span>
-                  </button>
-                </span>
-                <input type="time" id="appointment-time" name="appointment-time" placeholder="10:00">
-              </p>
-              <p class="appointment-form-phone">
-                <label for="appointment-phone">Телефон</label>
-                <input type="tel" id="appointment-phone" name="appointment-phone" placeholder="+7 800 000-00-00">
-              </p>
-              <p class="appointment-form-name">
-                <label for="appointment-name">Ваше имя</label>
-                <input type="text" id="appointment-name" name="appointment-name">
-              </p>
-                <button class="button" type="submit">Записаться</button>
+    <!--Подписка-->
+        <section class="subscribe">
+            <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+            <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+            <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+                <label class="visually-hiden" for="email">Email</label>
+                <input class="input-field" type="email" id="email" name="e-mail" placeholder="Ваш e-mail">
+                <button class="input-button" type="submit">Подписаться</button>
             </form>
         </section>
-    </div>
     </main>
-
-    <!--Подвал-->
-    <footer class="page-footer">
-        <section class="footer-contacts">
-            <h2 class="visually-hidden">Контакты</h2>
-            <img class="footer-logo" src="images/footer-logo.svg" alt="Логотип барбершопа «Бородинский»" width="184" height="21">
-            <address class="footer-contacts-address">
-                <p class="about-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-                <a class="footer-contacts-address-phone" href="tel:+78005558628">+7 800 555-86-28</a>
-              </address>
-              <a class="footer-contacts-map-link" href="#">Как нас найти?</a>
-        </section>
-        <section class="newsletter">
-            <h2 class="page-footer-title">Получайте лучшие предложения</h2>
-            <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-                <p class="newsletter-email">
-                  <label class="visually-hidden" for="newsletter-email">Email</label>
-                  <input class="field"  placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" required>
-                </p>
-                <button class="button newsletter-button" type="submit">
-                  <span class="visually-hidden">Отправить</span>
-                </button>
-              </form>
-                
-        </section>
+    <footer class="main-footer">
         <section class="footer-social">
-            <h2 class="page-footer-title">Давайте дружить</h2>
-            <ul class="footer-social-list">
-                <li class="footer-social-item">
-                  <a class="button" href="#">
-                    <span class="visually-hidden">Твиттер</span>
-                  </a>
+            <ul class="social-list">
+                <li class="social-item">
+                    <a class="social-link" href="">
+                        <span class="visually-hiden">Твиттер</span>
+                    </a>
                 </li>
-                <li class="footer-social-item">
-                  <a class="button" href="#">
-                    <span class="visually-hidden">ВКонтакте</span>
-                  </a>
+                <li class="social-item">
+                    <a class="social-link" href="">
+                        <span class="visually-hiden">Фейсбку</span>
+                    </a>
                 </li>
-                <li class="footer-social-item">
-                  <a class="button" href="#">
-                    <span class="visually-hidden">Инстаграм</span>
-                  </a>
+                <li class="social-item">
+                    <a class="social-link" href="">
+                        <span class="visually-hiden">Ютуб</span>
+                    </a>
                 </li>
-              </ul>
-              <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
+            </ul>
         </section>
-    </footer>   
+        <section class="footer-phone">
+            <a class="phone-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        </section>
+        <section class="footer-developer">
+            <a class="developer-link" href="#">
+                <img class="developer-logo" src="#" alt="Сделано в htmlacademy">
+            </a>
+        </section>
+    </footer>
 </body>
 </html>
