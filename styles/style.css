@@ -21,6 +21,17 @@ body {
     background-color: #FFFFFF;;
 }
 
+/*Кнопка*/
+.button {
+    color: #FFFFFF;
+    background: #756257;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
 /*Шапка*/
 .navigation-link {
     font-weight: 700;
@@ -31,7 +42,7 @@ body {
 }
 
 /*Логотип*/
-.advantages-background {
+.main-index {
     background-image: url(/sedona/images/index/index-background.jpg);
     background-repeat: no-repeat;
     background-size: 100% auto;
@@ -59,11 +70,10 @@ body {
 }
 
 /*Блок преимуществ*/
-.advantages-header {
+.advantages-title {
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
-    text-align: center;
     text-transform: uppercase;
 }
 
@@ -71,25 +81,76 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
-    text-align: center;
 }
 
-.card-1 {
-    background-color: #81B3D2;;
+.blue {
+    background: #83B3D3;
 }
 
-.card-3 {
+.soft-blue {
     background: rgba(131, 179, 211, 0.12);
 }
 
-.card-5 {
+.dark-blue {
     background: rgba(131, 179, 211, 0.2);
 }
 
-.card-1>.advantages-header {
+.blue>.advantages-title {
     color: #FFFFFF;
 }
 
-.card-1>.advantages-text {
+.blue>.advantages-text {
     color: #FFFFFF;
 }
+
+/*Поиск*/
+.search-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.search-description {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+}
+
+/*Подписка*/
+.subscribe {
+    background-image: url(/sedona/images/index/subscribe-background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-color: #83B3D3;
+}
+
+.subscribe-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.subscribe-description {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+/*Подвал*/
+.phone-link {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+}
+
