@@ -21,16 +21,17 @@ body {
     background-color: #FFFFFF;;
 }
 
-/*Кнопка*/
+/*Кнопки*/
 .button {
     color: #FFFFFF;
-    background: #756257;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 36px;
-    text-transform: uppercase;
-    text-align: center;
+    background: #756257;;
 }
+
+.button-input {
+   color: #FFFFFF;
+   background: #83B3D3;
+}
+
 
 /*Шапка*/
 .navigation-link {
@@ -154,3 +155,65 @@ body {
     color: #000000;
 }
 
+/*Выбор гостиницы*/
+.filter-section {
+    background-color: #83B3D3;
+    background-image: url(/sedona/images/catalog/catalog-background\ 1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    color:#FFFFFF;
+}
+
+/*Заголовок каталога*/
+.inner-header-title {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 78px;
+    color: #FFFFFF;
+}
+
+.breadcrumbs-link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/*Карточки гостиниц*/
+.sorting-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 39px;
+    text-transform: uppercase;
+}
+
+.product-card-image {
+    width: 300px;
+    height: 206px;
+}
+
+.product-card-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+}
+
+.product-card-description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.product-card-price {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.rating {
+    background: #F2F2F2;
+}
+
+.hotels-title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+}
