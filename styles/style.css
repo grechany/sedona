@@ -76,6 +76,13 @@ body {
     text-align: center;
 }
 
+/*Преимущества*/
+.advantages-list {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 /*Подвал*/
 .main-footer {
     width: 1060px;
