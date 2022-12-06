@@ -73,17 +73,17 @@
                 <ul class="advantages-list">
                     <li class="advantages-item">
                         <img class="img-svg" src="/sedona/images/index/house.svg" alt="Жильё">
-                        <h3 class="advantages-item-title">Жильё</h3>
+                        <h4 class="advantages-item-title">Жильё</h4>
                         <p class="advantages-text">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!</p>
                     </li>
                     <li class="advantages-item">
                         <img class="img-svg" src="/sedona/images/index/food.svg" alt="Еда">
-                        <h3 class="advantages-item-title">Еда</h3>
+                        <h4 class="advantages-item-title">Еда</h4>
                         <p class="advantages-text">Всегда заказывайте<br> топовый фирменный бургер,<br> вы не разочаруетесь!</p>
                     </li>
                     <li class="advantages-item">
                         <img class="img-svg" src="/sedona/images/index/present.svg" alt="Сувениры">
-                        <h3 class="advantages-item-title">Сувениры</h3>
+                        <h4 class="advantages-item-title">Сувениры</h4>
                         <p class="advantages-text">Не только китайского,<br> но и настоящего местного<br> производства!</p>
                     </li>
                 </ul>
@@ -101,24 +101,43 @@
     
                 <ul class="advantages-list second">
                     <li class="advantages-item">
-                        <h3 class="advantages-item-title">Небольшая<br> площадь</h3>
+                        <h4 class="advantages-item-title">Небольшая<br> площадь</h4>
                         <p class="advantages-text-number">— №3 —</p>
                         <p class="advantages-text">Все достопримечательности<br> находятся очень близко</p>
                     </li>
                     <li class="advantages-item">
-                        <h3 class="advantages-item-title">Красивая<br> дорога</h3>
+                        <h4 class="advantages-item-title">Красивая<br> дорога</h4>
                         <p class="advantages-text-number">— №4 —</p>
                         <p class="advantages-text">Ехать в Седону из Лас-Вегаса<br> совсем не скучно!</p>
                     </li>
                     <li class="advantages-item">
-                        <h3 class="advantages-item-title">Мало<br> туристов</h3>
+                        <h4 class="advantages-item-title">Мало<br> туристов</h4>
                         <p class="advantages-text-number">— №5 —</p>
                         <p class="advantages-text">Большинство едет в Гранд<br> Каньон и толпится там</p>
                     </li>
                 </ul>
             </li>
         </ol>
-    </section>       
+    </section>
+<!--Поиск гостиницы-->
+    <section class="hotel">
+        <h3 class="visually-hidden">Найти гостиницу</h3>
+        <p class="hotel-title">Заинтересовались?</p>
+        <p class="hotel-description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <a class="button" href="/sedona/catalog.html">Поиск гостиницы в Седоне</a>   
+    </section> 
+<!--Подписка на рассылку-->
+    <section class="subscribe">
+        <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
+        <p class="subscribe-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
+        <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
+            <label for="subscribe">
+            <span class="visually-hidden">Введите e-mail</span>
+            </label>
+            <input class="subscribe-input" type="email" name="email" id="subscribe" placeholder="Ваш e-mail">
+            <input class="subscribe-button" type="submit" value="Подписаться">
+        </form>
+    </section>          
     </main>
 <!--Подвал-->    
     <footer class="main-footer">
@@ -148,7 +167,9 @@
         </section>
 <!--Разработчик-->
         <section class="footer-developer">
-        <img class="developer-logo" src="/sedona/images/index/logo_htmlacademy.svg" alt="Логотип разработчика">
+        <a class="developer-link" href="https://htmlacademy.ru">
+            <img class="developer-logo" src="/sedona/images/index/logo_htmlacademy.svg" alt="Логотип разработчика">
+        </a>
         </section>
     </footer>    
 </body>
