@@ -78,9 +78,85 @@ body {
 
 /*Преимущества*/
 .advantages-list {
-    margin: 0;
+    margin: 0 auto;
+    width: 1200px;
     display: flex;
     flex-wrap: wrap;
+}
+
+.advantages-item-wrapper {
+    margin: 0;
+    width: 1200px;
+    display: flex;
+}
+
+.wrapper-text {
+    width: 400px;
+    background-color: #83B3D3;
+}
+
+.advantages-title {
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;  
+}
+
+.advantages-description-number {
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.advantages-description {
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.advantages-photo {
+    display: block;
+}
+
+ul.advantages-list>.advantages-item {
+    width: 400px;
+    height: 384px;
+}
+
+.advantages-item-title {
+    color: #000000;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.img-svg {
+    padding: 89px 162px 23px 163px;
+}
+
+.advantages-text {
+    color: #333333;
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.advantages-text-number {
+    color: #333333;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
 }
 
 /*Подвал*/
