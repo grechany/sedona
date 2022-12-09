@@ -15,56 +15,46 @@
 }
 
 html {
-    height: 100%
+    height: 100%;
 }
 
 body {
     margin: 0;
-    font-family: "PT Sans Narrow", sans-serif;
-    font-size: 22px;
-    line-height: 36px;
+    font-family: "PT Sans Narrow";
+    color: #000000;
     background-color: #FFFFFF;
+    font-style: normal;
+    font-weight: 400;
     display: flex;
     flex-direction: column;
     min-height: 100%;
 }
 
-/*Навигация*/
-.navigation {
-    width: 1060px;
-    display: flex;
+/*Шапка*/
+.header-container {
+    width: 1200px;
     margin: 0 auto;
 }
 
-.navigation-logo {
-    width: 139px;
-    margin-right: 30px;
-}
-
-.navigation-list {
-    margin: 0;
-    width: 345px;
-}
-
-.navigation-user {
-    width: 264px;
-    margin-left: 282px;
+.navigation {
+    width: 1060px;
+    margin: 0 auto;
+    display: flex;
 }
 
 /*Основное*/
-.main-index {
+.main-container {
+    flex-grow: 1;
+    width: 1200px;
     margin: 0 auto;
 }
 
-.main-image-wrapper {
-    background-color: #83B3D3;
+.main-image {
     background-image: url(/sedona/images/index/index-background.jpg);
-    background-repeat: no-repeat;
     background-size: 100% auto;
-}
-
-.main-container {
-    flex-grow: 1;
+    background-repeat: no-repeat;
+    width: 1200px;
+    margin: 0 auto;
 }
 
 .main-logo {
@@ -72,151 +62,15 @@ body {
     margin: 0 auto;
 }
 
-.main-title {
-    text-align: center;
-}
-
-.main-description {
-    text-align: center;
-}
-
-/*Список преимуществ*/
-.advantages-list {
-    margin: 0 auto;
-    width: 1200px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-/*Обертка карточки*/
-.advantages-item-wrapper {
-    margin: 0;
-    width: 1200px;
-    display: flex;
-}
-
-/*Обертка тестового блока*/
-.wrapper-text {
-    width: 400px;
-    background-color: #83B3D3;
-}
-
-/*Заголовок карточки*/
-.advantages-title {
-    padding-top: 98px;
-    color: #FFFFFF;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;  
-}
-
-/*Номер карточки*/
-.advantages-description-number {
-    color: #FFFFFF;
-    text-align: center;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-}
-
-/*Текст карточки*/
-.advantages-description {
-    color: #FFFFFF;
-    text-align: center;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-}
-
-/*Фото карточки*/
-.advantages-photo {
+.main-wave {
     display: block;
-}
-
-ul.advantages-list>.advantages-item {
-    width: 400px;
-    height: 384px;
-}
-
-ul.advantages-list>li:nth-child(1),
-ul.advantages-list>li:nth-child(3) {
-    background: rgba(131, 179, 211, 0.12);
-}
-
-ul.second>li:nth-child(2) {
-    background: rgba(131, 179, 211, 0.2);
-}
-
-ul.second>li.advantages-item>.advantages-item-title {
-    padding-top: 98px;
-}
-
-/*Заголовок карточки*/
-.advantages-item-title {
-    color: #000000;
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
-}
-
-.img-svg {
-    padding: 89px 162px 23px 163px;
-}
-
-.advantages-text {
-    color: #333333;
-    text-align: center;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-}
-
-.advantages-text-number {
-    color: #333333;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
+    z-index: 1;
+    margin-bottom: 0;
 }
 
 /*Подвал*/
-.main-footer {
-    width: 1060px;
+.footer-container {
+    width: 1200px;
+    margin: 0 auto;
     display: flex;
-    margin: 0 auto;
-}
-
-.footer-social {
-    width: 107px;
-}
-
-.footer-social-list {
-    margin: 0;
-}
-
-.footer-contacts {
-    width: 720px;
-    margin-left: 61px;
-    margin-right: 53px;
-}
-
-.footer-phone {
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 40px; 
-    text-align: center;
-    text-transform: uppercase; 
-    text-decoration: none;
-    color: black;
-    display: block;
-    margin: 0 auto;
-}
-
-.footer-developer {
-    width: 115px;
 }
