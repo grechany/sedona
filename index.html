@@ -8,169 +8,79 @@
     <title>Туристический город Седона</title>
 </head>
 <body>
-<!--Шапка-->    
-    <header class="page-header">
-<!--Навигация-->        
-        <nav class="navigation">
-<!--Логотип навигации-->            
-            <img class="navigation-logo" src="/sedona/images/index/header-logo.svg" width="139" height="70" alt="Логотип Седона">
-<!--Меню навигации-->
+    <header class="main-header">
+        <div class="header-container">
+            <nav class="navigation">
+            <img class="navigation-logo" src="/sedona/images/index/header-logo.svg" alt="Логотип города Седона" width="139" height="70">
+
             <ul class="navigation-list">
                 <li class="navigation-item">
-                    <a class="navigation-link navigation-link-select">Главная</a>
+                    <a class="navigation-link navigation-current">Главная</a>
                 </li>
                 <li class="navigation-item">
-                    <a class="navigation-link" href="#">О Седоне</a>
+                    <a class="navigation-link" href="#">О седоне</a>
                 </li>
                 <li class="navigation-item">
                     <a class="navigation-link" href="/sedona/catalog.html">Гостиницы</a>
                 </li>
             </ul>
-<!--Пользовательское меню-->
+
             <ul class="navigation-list navigation-user">
                 <li class="navigation-item">
                     <a class="navigation-link" href="#">
                         <span class="visually-hidden">Поиск</span>
                     </a>
-                </li class="navigation-item">
-                <li>
+                </li>
+                <li class="navigation-item">
                     <a class="navigation-link" href="#">
                         <span class="visually-hidden">Избранное</span>
-                        <span class="icon">12</span>
+                        <span class="navigation-icon">12</span>
                     </a>
                 </li>
                 <li class="navigation-item">
-                    <a class="button" href="#">Хочу сюда!</a>
+                    <a class="button" href="/sedona/catalog.html">Хочу сюда!</a>
                 </li>
             </ul>
-        </nav>
+            </nav>
+        </div>
     </header>
-<!--Основное-->
     <main class="main-index main-container">
-<!--Обертка для фонового изображения-->
-    <div class="main-image-wrapper">
-       <h1 class="visually-hidden">Туристический город Седона</h1> 
-       <img class="main-logo" src="/sedona/images/index/welcome.svg" width="458" height="352" alt="Логотип города Седона">
-    </div>
-<!--Заголовок-->    
-       <h2 class="main-title">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
-       <p class="main-description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
-<!--Преимущества-->
-    <section class="advantages">
-        <h2 class="visually-hidden">Преимущества посещения Седоны</h2>
-<!--Список преимуществ-->        
-        <ol class="advantages-list">
-            <li class="advantages-item">
-                <div class="advantages-item-wrapper">
-                    <div class="wrapper-text">
-                        <h3 class="advantages-title">Настоящий<br> городок</h3>
-                        <p class="advantages-description-number">— №1 —</p>
-                        <p class="advantages-description">Седона — не аттракцион<br> для туристов, там течёт<br> своя жизнь</p>
-                    </div>        
-                        <img class="advantages-photo" src="/sedona/images/index/photo-1.jpg" width="800" height="384" alt="Фото города Седона">   
-                </div>        
-
-                <ul class="advantages-list">
-                    <li class="advantages-item">
-                        <img class="img-svg" src="/sedona/images/index/house.svg" alt="Жильё">
-                        <h4 class="advantages-item-title">Жильё</h4>
-                        <p class="advantages-text">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!</p>
-                    </li>
-                    <li class="advantages-item">
-                        <img class="img-svg" src="/sedona/images/index/food.svg" alt="Еда">
-                        <h4 class="advantages-item-title">Еда</h4>
-                        <p class="advantages-text">Всегда заказывайте<br> топовый фирменный бургер,<br> вы не разочаруетесь!</p>
-                    </li>
-                    <li class="advantages-item">
-                        <img class="img-svg" src="/sedona/images/index/present.svg" alt="Сувениры">
-                        <h4 class="advantages-item-title">Сувениры</h4>
-                        <p class="advantages-text">Не только китайского,<br> но и настоящего местного<br> производства!</p>
-                    </li>
-                </ul>
-            </li>
-
-            <li class="advantages-item">
-                <div class="advantages-item-wrapper"> 
-                    <img class="advantages-photo" src="/sedona/images/index/photo-2.jpg" width="800" height="384" alt="Фото города Седона">
-                    <div class="wrapper-text">
-                        <h3 class="advantages-title">Там есть<br> мост дьявола</h3>
-                        <p class="advantages-description-number">— №2 —</p>
-                        <p class="advantages-description">Да, по нему можно пройти!<br> Если вы осмелитесь,<br> разумеется</p>
-                    </div>    
-                </div>
-    
-                <ul class="advantages-list second">
-                    <li class="advantages-item">
-                        <h4 class="advantages-item-title">Небольшая<br> площадь</h4>
-                        <p class="advantages-text-number">— №3 —</p>
-                        <p class="advantages-text">Все достопримечательности<br> находятся очень близко</p>
-                    </li>
-                    <li class="advantages-item">
-                        <h4 class="advantages-item-title">Красивая<br> дорога</h4>
-                        <p class="advantages-text-number">— №4 —</p>
-                        <p class="advantages-text">Ехать в Седону из Лас-Вегаса<br> совсем не скучно!</p>
-                    </li>
-                    <li class="advantages-item">
-                        <h4 class="advantages-item-title">Мало<br> туристов</h4>
-                        <p class="advantages-text-number">— №5 —</p>
-                        <p class="advantages-text">Большинство едет в Гранд<br> Каньон и толпится там</p>
-                    </li>
-                </ul>
-            </li>
-        </ol>
-    </section>
-<!--Поиск гостиницы-->
-    <section class="hotel">
-        <h3 class="visually-hidden">Найти гостиницу</h3>
-        <p class="hotel-title">Заинтересовались?</p>
-        <p class="hotel-description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="button" href="/sedona/catalog.html">Поиск гостиницы в Седоне</a>   
-    </section> 
-<!--Подписка на рассылку-->
-    <section class="subscribe">
-        <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
-        <p class="subscribe-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
-        <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
-            <label for="subscribe">
-            <span class="visually-hidden">Введите e-mail</span>
-            </label>
-            <input class="subscribe-input" type="email" name="email" id="subscribe" placeholder="Ваш e-mail">
-            <input class="subscribe-button" type="submit" value="Подписаться">
-        </form>
-    </section>          
+        <section class="main-image"> 
+            <h1 class="visually-hidden">Туристический город Седона</h1>
+            <img class="main-logo" src="/sedona/images/index/welcome.svg" alt="Логотип города Седона" width="458" height="352">
+            <img class="main-wave" src="/sedona/images/index/wave.svg" width="1200" height="57">
+        </section>     
     </main>
-<!--Подвал-->    
     <footer class="main-footer">
-<!--Соцсети-->
-        <section class="footer-social">
+        <div class="footer-container"> 
+            <section class="footer-social">
             <ul class="footer-social-list">
                 <li class="footer-social-item">
                     <a class="footer-social-link" href="#">
-                        <span class="visually-hidden">Твиттер</span>
+                        <span class="visually-hidden">Twitter</span>
                     </a>
                 </li>
                 <li class="footer-social-item">
                     <a class="footer-social-link" href="#">
-                        <span class="visually-hidden">Фейсбук</span>
+                        <span class="visually-hidden">Facebook</span>
                     </a>
                 </li>
                 <li class="footer-social-item">
                     <a class="footer-social-link" href="#">
-                        <span class="visually-hidden">Ютуб</span>
+                        <span class="visually-hidden">Youtube</span>
                     </a>
                 </li>
             </ul>
-        </section>
-<!--Контакты-->
-        <section class="footer-contacts">
-        <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        </section>
-<!--Разработчик-->
-        <section class="footer-developer">
-        <a class="developer-link" href="https://htmlacademy.ru">
-            <img class="developer-logo" src="/sedona/images/index/logo_htmlacademy.svg" alt="Логотип разработчика">
-        </a>
-        </section>
-    </footer>    
+            </section>
+            <section class="footer-contacts">
+            <a class="footer-contacts-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
+            </section>
+            <section class="footer-developer">
+            <a class="footer-developer-link" href="http://htmlacademy.ru">
+                <img class="footer-developer-image" src="/sedona/images/index/logo_htmlacademy.svg" alt="Логтип разработчика">
+            </a>
+            </section>
+        </div>     
+    </footer>
 </body>
 </html>
