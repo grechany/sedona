@@ -42,6 +42,24 @@ body {
     display: flex;
 }
 
+.navigation-list {
+    margin: 0;
+    width: 345px;
+}
+
+.navigation-user {
+    width: 345px;
+}
+
+.navigation-link {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+}
+
 /*Основное*/
 .main-container {
     flex-grow: 1;
@@ -68,9 +86,82 @@ body {
     margin-bottom: 0;
 }
 
+.main-description {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.description-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.description-text {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 36px;
+    color: #333333;
+}
+
+/*Преимущества*/
+.advantages-list {
+    margin: 0 auto;
+}
+
+.advantages-item {
+    width: 1200px;
+    display: flex;
+}
+
+.advantages-text-block {
+    width: 400px;
+    background-color: #83B3D3;
+    text-align: center;
+}
+
+.advantages-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.advantages-number {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.advantages-description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
 /*Подвал*/
 .footer-container {
     width: 1200px;
     margin: 0 auto;
     display: flex;
+}
+
+.footer-contacts {
+    width: 720px;
+    text-align: center;
+}
+
+.footer-contacts-link {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
 }
