@@ -100,12 +100,14 @@ h1, h2 {
     background-size: 100% auto;
     background-repeat: no-repeat;
     width: 1200px;
+    height: 485px;
     margin: 0 auto;
 }
 
 .main-logo {
     display: block;
     margin: 0 auto;
+    padding-top: 51px;
 }
 
 .main-wave {
@@ -113,17 +115,17 @@ h1, h2 {
     display: block;
     margin-top: 25px;
     margin-bottom: 0;
-    z-index: 1;
 }
 
 .main-description {
     width: 1200px;
     height: 282px;
     margin: 0 auto;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
+    align-items: center;
 }
 
 /*Все заголовки*/
