@@ -35,6 +35,10 @@ ol, ul {
     padding: 0;
 }
 
+h1, h2 {
+    margin: 0;
+}
+
 .button {
     background-color: #756257;
     color: #FFFFFF;
@@ -51,18 +55,27 @@ ol, ul {
 
 .navigation {
     width: 1060px;
+    height: 70px;
+    box-sizing: border-box;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
 }
 
 .navigation-list {
-    margin: 0;
+    margin: 0 282px 0 30px;
     width: 345px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .navigation-user {
-    width: 345px;
+    margin: 0;
+    width: 264px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
 }
 
 .navigation-link {
@@ -75,8 +88,11 @@ ol, ul {
 }
 
 /*Основное*/
-.main-container {
+.main-index {
     flex-grow: 1;
+}
+
+.main-container {
     width: 1200px;
     margin: 0 auto;
 }
@@ -209,7 +225,16 @@ ol, ul {
 /*Подвал*/
 .footer-container {
     width: 1200px;
+    height: 120px;
+    box-sizing: border-box;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+
+.footer-social-list {
+    margin: 0;
     display: flex;
     justify-content: space-between;
 }
