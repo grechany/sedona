@@ -55,8 +55,6 @@ h1, h2 {
 
 .navigation {
     width: 1060px;
-    height: 70px;
-    box-sizing: border-box;
     margin: 0 auto;
     display: flex;
 }
@@ -64,9 +62,9 @@ h1, h2 {
 .navigation-list {
     margin: 0 282px 0 30px;
     width: 345px;
-    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -89,7 +87,7 @@ h1, h2 {
 
 /*Основное*/
 .main-index {
-    flex-grow: 1;
+    flex-grow: 1;    
 }
 
 .main-container {
@@ -113,13 +111,18 @@ h1, h2 {
 .main-wave {
     width: 1200px;
     display: block;
+    margin-top: 25px;
     margin-bottom: 0;
     z-index: 1;
 }
 
 .main-description {
     width: 1200px;
+    height: 282px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
 }
 
@@ -156,6 +159,9 @@ h1, h2 {
     background-color: #83B3D3;
     color: #FFFFFF;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .advantages-title {
@@ -180,6 +186,9 @@ h1, h2 {
     width: 400px;
     height: 384px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .advantages-card>:nth-child(odd) {
@@ -190,18 +199,26 @@ h1, h2 {
     background-color: rgba(131, 179, 211, 0.2);
 }
 
+/*Поиск гостиницы*/
 .search {
     width: 1200px;
+    height: 417px;
 }
 
 .search-wrapper {
     width: 720px;
+    height: 417px;
     margin: 0 auto;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
+/*Подписка*/
 .subscribe {
     width: 1200px;
+    height: 411px;
     background-image: url(/sedona/images/index/subscribe-background.jpg);
     background-repeat: no-repeat;
     background-size: 100% auto;
@@ -211,8 +228,12 @@ h1, h2 {
 
 .subscribe-wrapper {
     width: 800px;
+    height: 411px;
     margin: 0 auto;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .search-text,
@@ -226,7 +247,6 @@ h1, h2 {
 .footer-container {
     width: 1200px;
     height: 120px;
-    box-sizing: border-box;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -236,7 +256,8 @@ h1, h2 {
 .footer-social-list {
     margin: 0;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-between; 
 }
 
 .footer-contacts {
