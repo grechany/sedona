@@ -108,12 +108,12 @@ h1, h2 {
     display: block;
     margin: 0 auto;
     padding-top: 51px;
+    padding-bottom: 25px;
 }
 
 .main-wave {
     width: 1200px;
     display: block;
-    margin-top: 25px;
     margin-bottom: 0;
 }
 
@@ -274,4 +274,23 @@ h1, h2 {
     text-decoration: none;
     text-transform: uppercase;
     color: #000000;
+}
+
+/*Гостиницы*/
+.filter-wrapper {
+    background-color: #83B3D3;
+    color: #FFFFFF;
+}
+
+.page-title {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 78px;    
+}
+
+.breadcrumbs-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-decoration: none;
 }
