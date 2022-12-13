@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/sedona/styles/style.css">
+    <title>Каталог гостиниц Седоны</title>
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <nav class="navigation">
+                <a href="/sedona/index.html">
+                    <img class="navigation-logo" src="/sedona/images/index/header-logo.svg" alt="Логотип города Седона" width="139" height="70">
+                </a>    
+
+                <ul class="navigation-list">
+                    <li class="navigation-item">
+                        <a class="navigation-link" href="/sedona/index.html">Главная</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="navigation-link" href="#">О седоне</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="navigation-link navigation-current">Гостиницы</a>
+                    </li>
+                </ul>
+
+                <ul class="navigation-list navigation-user">
+                    <li class="navigation-item">
+                        <a class="navigation-link" href="#">
+                            <span class="visually-hidden">Поиск</span>
+                        </a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="navigation-link" href="#">
+                            <span class="visually-hidden">Избранное</span>
+                            <span class="navigation-icon">12</span>
+                        </a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="button" href="/sedona/catalog.html">Хочу сюда!</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main-index">
+        <div class="main-container">
+           <div class="filter-wrapper">
+                <section class="breadcrumbs">
+                    <h1 class="page-title">Гостиницы Седоны</h1>
+                    <ul class="breadcrumbs-list">
+                        <li class="breadcrumbs-item">
+                            <a class="breadcrumbs-link" href="/sedona/index.html">Главная</a>
+                        </li>
+                        <li class="breadcrumbs-item">
+                            <a class="breadcrumbs-link">Гостиницы</a>
+                        </li>
+                    </ul>
+                </section>
+                <section class="filter-section">
+                    <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
+                        <div class="fliter-item">
+                            <p class="filter-description">Инфраструктура:</p>
+                            <input class="input-checkbox" id="pool" name="pool" type="checkbox" checked>
+                            <label class="input-name" for="pool">Бассейн</label><br>
+                            <input class="input-checkbox" id="parking" name="parking" type="checkbox" checked>
+                            <label class="input-name" for="parking">Парковка</label><br>
+                            <input class="input-checkbox" id="wi-fi" name="wi-fi" type="checkbox">
+                            <label class="input-name" for="wi-fi">Wi-Fi</label><br>
+                        </div>
+                        <div class="fliter-item">
+                            <p class="filter-description">Тип жилья:</p>
+                            <input class="input-checkbox" id="hotel" name="hotel" type="radio" checked>
+                            <label class="input-name" for="hotel">Гостиница</label><br>
+                            <input class="input-checkbox" id="motel" name="motel" type="radio">
+                            <label class="input-name" for="motel">Мотель</label><br>
+                            <input class="input-checkbox" id="aparts" name="aparts" type="radio">
+                            <label class="input-name" for="aparts">Апартаменты</label><br>
+                        </div>
+                    
+                    </form>
+                </section>
+            </div> 
+        </div>
+    </main>
+    <footer class="main-footer">
+        <div class="footer-container"> 
+            <section class="footer-social">
+                <ul class="footer-social-list">
+                    <li class="footer-social-item">
+                        <a class="footer-social-link" href="#">
+                            <span class="visually-hidden">Twitter</span>
+                        </a>
+                    </li>
+                    <li class="footer-social-item">
+                        <a class="footer-social-link" href="#">
+                            <span class="visually-hidden">Facebook</span>
+                        </a>
+                    </li>
+                    <li class="footer-social-item">
+                        <a class="footer-social-link" href="#">
+                            <span class="visually-hidden">Youtube</span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="footer-contacts">
+                <a class="footer-contacts-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
+            </section>
+            <section class="footer-developer">
+                <a class="footer-developer-link" href="http://htmlacademy.ru">
+                    <img class="footer-developer-image" src="/sedona/images/index/logo_htmlacademy.svg" alt="Логтип разработчика" width="115" height="34">
+                </a>
+            </section>
+        </div>     
+    </footer>
+</body>
+</html>
