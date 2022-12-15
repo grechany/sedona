@@ -294,3 +294,9 @@ h1, h2 {
     line-height: 21px;
     text-decoration: none;
 }
+
+/*Карточки гостиниц*/
+.cards-list {
+    display: grid;
+    grid-template-columns: repeat(3, 340px);
+}
