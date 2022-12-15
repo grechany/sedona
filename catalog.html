@@ -48,7 +48,7 @@
     </header>
     <main class="main-index">
         <div class="main-container">
-           <div class="filter-wrapper">
+            <div class="filter-wrapper">
                 <section class="breadcrumbs">
                     <h1 class="page-title">Гостиницы Седоны</h1>
                     <ul class="breadcrumbs-list">
@@ -62,28 +62,107 @@
                 </section>
                 <section class="filter-section">
                     <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
-                        <div class="fliter-item">
-                            <p class="filter-description">Инфраструктура:</p>
-                            <input class="input-checkbox" id="pool" name="pool" type="checkbox" checked>
-                            <label class="input-name" for="pool">Бассейн</label><br>
-                            <input class="input-checkbox" id="parking" name="parking" type="checkbox" checked>
-                            <label class="input-name" for="parking">Парковка</label><br>
-                            <input class="input-checkbox" id="wi-fi" name="wi-fi" type="checkbox">
-                            <label class="input-name" for="wi-fi">Wi-Fi</label><br>
-                        </div>
-                        <div class="fliter-item">
-                            <p class="filter-description">Тип жилья:</p>
-                            <input class="input-checkbox" id="hotel" name="hotel" type="radio" checked>
-                            <label class="input-name" for="hotel">Гостиница</label><br>
-                            <input class="input-checkbox" id="motel" name="motel" type="radio">
-                            <label class="input-name" for="motel">Мотель</label><br>
-                            <input class="input-checkbox" id="aparts" name="aparts" type="radio">
-                            <label class="input-name" for="aparts">Апартаменты</label><br>
-                        </div>
-                    
+                        <fieldset class="fliter-group">
+                            <legend class="filter-title">Инфраструктура:</legend>
+                                <input class="input-checkbox" id="pool" name="pool" type="checkbox" checked>
+                                <label class="input-name" for="pool">Бассейн</label><br>
+                                <input class="input-checkbox" id="parking" name="parking" type="checkbox" checked>
+                                <label class="input-name" for="parking">Парковка</label><br>
+                                <input class="input-checkbox" id="wi-fi" name="wi-fi" type="checkbox">
+                                <label class="input-name" for="wi-fi">Wi-Fi</label><br>
+                        </fieldset>
+                        <fieldset class="fliter-group">
+                            <legend class="filter-description">Тип жилья:</legend>
+                                <input class="input-checkbox" id="hotel" name="hotel" type="radio" checked>
+                                <label class="input-name" for="hotel">Гостиница</label><br>
+                                <input class="input-checkbox" id="motel" name="motel" type="radio">
+                                <label class="input-name" for="motel">Мотель</label><br>
+                                <input class="input-checkbox" id="aparts" name="aparts" type="radio">
+                                <label class="input-name" for="aparts">Апартаменты</label><br>
+                        </fieldset>
+                        <fieldset class="fliter-group">
+                            <legend class="filter-description">Стоимость, ₽:</legend>
+                                <label class="visually-hidden" for="input-min">Минимальная стоимость</label>
+                                <input class="input-min" type="text" id="input-min" name="min-price" placeholder="от">
+                                <input class="input-min" type="text" id="input-max" name="max-price" placeholder="до">
+                                <label class="visually-hidden" for="input-max">Максимальная стоимость</label><br>
+                                <button class="range-toggle toggle-min" type="button">
+                                    <span class="visually-hidden">Изменить минимальную цену</span>
+                                </button>
+                                <button class="range-toggle toggle-max" type="button">
+                                    <span class="visually-hidden">Изменить максимальную цену</span>
+                                </button>
+                        </fieldset>
+                        <button class="button submit-button" type="submit">Применить</button>
+                        <button class="button reset-button" type="reset">Сбросить</button>
                     </form>
                 </section>
-            </div> 
+            </div>
+            <section class="filter-sorting">
+                <p class="sorting-value">Найдено гостиниц: <span class="sorting-result">38</span></p>
+                <form class="sorting-form" action="https://echo.htmlacademy.ru" method="post">
+                    <label class="visually-hidden" for="sorting-select">Сортировка</label>
+                    <select class="select-control" name="sorting-select" id="sorting-select">
+                        <option class="control-item" value="cheap">Сначала дешёвые</option>
+                        <option class="control-item" value="expensive">Сначала дорогие</option>
+                    </select>
+                    <button class="visually-hidden" type="submit">Показать</button>
+                </form>
+
+                <a class="button button-1" href="#">
+                    <span class="visually-hidden">Крупный список</span>
+                </a>
+                <a href="#" class="button button-2">
+                    <span class="visually-hidden">Показать карточки</span>
+                </a>
+                <a class="button button-3" href="#">
+                    <span class="visually-hidden">Обычный список</span>
+                </a>
+
+                <ul class="cards-list">
+                    <li class="cards-item">
+                        <img class="cards-photo" src="/sedona/images/catalog/Amara Resort & Spa.jpg" alt="Amara Resort & Spa">
+                        <h2 class="cards-title">Amara Resort & Spa</h2>
+                        <p class="cards-desctiption">Гостиница</p>
+                        <p class="cards-desctiption">От 4000 ₽</p>
+                        <a class="button buton-card" href="#">Подробнее</a>
+                        <button class="button favorites">В Избранное</button>
+                        <p class="visually-hidden">Количество звезд <span class="stars-value"></span></p>
+                        <p class="rating">Рейтинг: <span class="rating-value">8,5</span></p>
+                    </li>
+                    <li class="cards-item">
+                        <img class="cards-photo" src="/sedona/images/catalog/Desert Quail Inn.jpg" alt="Desert Quail Inn">
+                        <h2 class="cards-title">Desert Quail Inn</h2>
+                        <p class="cards-desctiption">Гостиница</p>
+                        <p class="cards-desctiption">От 3000 ₽</p>
+                        <a class="button buton-card" href="#">Подробнее</a>
+                        <button class="button favorites">В Избранное</button>
+                        <p class="visually-hidden">Количество звезд <span class="stars-value"></span></p>
+                        <p class="rating">Рейтинг: <span class="rating-value">8,9</span></p>
+                    </li>
+                    <li class="cards-item">
+                        <img class="cards-photo" src="/sedona/images/catalog/Amara Resort & Spa.jpg" alt="Amara Resort & Spa">
+                        <h2 class="cards-title">Amara Resort & Spa</h2>
+                        <p class="cards-desctiption">Гостиница</p>
+                        <p class="cards-desctiption">От 4000 ₽</p>
+                        <a class="button buton-card" href="#">Подробнее</a>
+                        <button class="button favorites">В Избранное</button>
+                        <p class="visually-hidden">Количество звезд <span class="stars-value"></span></p>
+                        <p class="rating">Рейтинг: <span class="rating-value">8,9</span></p>
+                    </li>
+                    <li class="cards-item">
+                        <img class="cards-photo" src="/sedona/images/catalog/Amara Resort & Spa.jpg" alt="Amara Resort & Spa">
+                        <h2 class="cards-title">Amara Resort & Spa</h2>
+                        <p class="cards-desctiption">Гостиница</p>
+                        <p class="cards-desctiption">От 4000 ₽</p>
+                        <a class="button buton-card" href="#">Подробнее</a>
+                        <button class="button favorites">В Избранное</button>
+                        <p class="visually-hidden">Количество звезд <span class="stars-value"></span></p>
+                        <p class="rating">Рейтинг: <span class="rating-value">8,9</span></p>
+                    </li>
+
+                </ul>
+            </section> 
         </div>
     </main>
     <footer class="main-footer">
