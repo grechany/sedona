@@ -107,22 +107,25 @@
                         <option class="control-item" value="expensive">Сначала дорогие</option>
                     </select>
                     <button class="visually-hidden" type="submit">Показать</button>
-                </form>
+                
+                    <div class="button-group">
+                        <a class="button button-1" href="#">
+                            <span class="visually-hidden">Крупный список</span>
+                        </a>
+                        <a href="#" class="button button-2">
+                            <span class="visually-hidden">Показать карточки</span>
+                        </a>
+                        <a class="button button-3" href="#">
+                            <span class="visually-hidden">Обычный список</span>
+                        </a>
+                    </div>
 
-                <a class="button button-1" href="#">
-                    <span class="visually-hidden">Крупный список</span>
-                </a>
-                <a href="#" class="button button-2">
-                    <span class="visually-hidden">Показать карточки</span>
-                </a>
-                <a class="button button-3" href="#">
-                    <span class="visually-hidden">Обычный список</span>
-                </a>
+                    <h2 class="visually-hidden">Список гостиниц</h2>
 
-                <ul class="cards-list">
+                    <ul class="cards-list">
                     <li class="cards-item">
                         <img class="cards-photo" src="/sedona/images/catalog/Amara Resort & Spa.jpg" alt="Amara Resort & Spa">
-                        <h2 class="cards-title">Amara Resort & Spa</h2>
+                        <h3 class="cards-title">Amara Resort & Spa</h3>
                         <p class="cards-desctiption">Гостиница</p>
                         <p class="cards-desctiption">От 4000 ₽</p>
                         <a class="button buton-card" href="#">Подробнее</a>
@@ -132,7 +135,7 @@
                     </li>
                     <li class="cards-item">
                         <img class="cards-photo" src="/sedona/images/catalog/Desert Quail Inn.jpg" alt="Desert Quail Inn">
-                        <h2 class="cards-title">Desert Quail Inn</h2>
+                        <h3 class="cards-title">Desert Quail Inn</h3>
                         <p class="cards-desctiption">Гостиница</p>
                         <p class="cards-desctiption">От 3000 ₽</p>
                         <a class="button buton-card" href="#">Подробнее</a>
@@ -142,7 +145,7 @@
                     </li>
                     <li class="cards-item">
                         <img class="cards-photo" src="/sedona/images/catalog/Villas at Poco Diablo.jpg" alt="Villas at Poco Diablo">
-                        <h2 class="cards-title">Villas at Poco Diablo</h2>
+                        <h3 class="cards-title">Villas at Poco Diablo</h3>
                         <p class="cards-desctiption">Гостиница</p>
                         <p class="cards-desctiption">От 2000 ₽</p>
                         <a class="button buton-card" href="#">Подробнее</a>
@@ -152,7 +155,7 @@
                     </li>
                     <li class="cards-item">
                         <img class="cards-photo" src="/sedona/images/catalog/GreenTree Inn.jpg" alt="GreenTree Inn">
-                        <h2 class="cards-title">GreenTree Inn</h2>
+                        <h3 class="cards-title">GreenTree Inn</h3>
                         <p class="cards-desctiption">Гостиница</p>
                         <p class="cards-desctiption">От 3000 ₽</p>
                         <a class="button buton-card" href="#">Подробнее</a>
@@ -160,8 +163,54 @@
                         <p class="visually-hidden">Количество звезд <span class="stars-value"></span></p>
                         <p class="rating">Рейтинг: <span class="rating-value">8,9</span></p>
                     </li>
-
+                    </ul>
+                    <button class="button button-upload" type="submit">Загрузить ещё</button>
+                </form>
+            </section>
+            <section class="pagination">
+                <ul class="pagination-list">
+                    <li class="pagination-item">
+                        <a class="pagination-link pagination-current">1</a>
+                    </li>
+                    <li class="pagination-item">
+                        <a class="pagination-link" href="http://#">2</a>
+                    </li>
+                    <li class="pagination-item">
+                        <a class="pagination-link" href="http://#">3</a>
+                    </li>
+                    <li class="pagination-item">
+                        <a class="pagination-link" href="http://#">4</a>
+                    </li>
+                    <li class="pagination-item">
+                        <a class="pagination-link" href="http://#">...</a>
+                    </li>
+                    <li class="pagination-item">
+                        <a class="pagination-link" href="http://#">10</a>
+                    </li>
                 </ul>
+
+                <form class="hotel-choise-value" action="https://echo.htmlacademy.ru" method="post">
+                    <label сlass="label-choise" for="select-choise">Гостиниц на странице:</label>
+                    <select class="select-control" name="hotel-choise" id="select-choise">
+                        <option class="control-item" value="2">2</option>
+                        <option class="control-item" value="4" selected>4</option>
+                        <option class="control-item" value="6">6</option>
+                    </select>
+                    <button class="visually-hidden" type="submit">Показать</button>
+                </form>
+            </section>
+            <section class="subscribe-catalog">
+                <div class="subscribe-wrapper">
+                    <h2 class="all-title">Подпишитесь на рассылку</h2>
+                    <p class="subscribe-text">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
+                    <form class="subscribe-form" action="http://echo.htmlacademy.ru" method="post">
+                        <label class="subscribe-post" for="input">
+                            <span class="visually-hidden">Введите ваш e-mail</span>
+                        </label>
+                        <input class="input-form" type="email" id="input" placeholder="Ваш e-mail" name="user-email">
+                        <button class="input-button" type="submit">Подписаться</button>
+                    </form>
+                </div>
             </section> 
         </div>
     </main>
