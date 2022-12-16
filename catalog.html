@@ -93,8 +93,10 @@
                                     <span class="visually-hidden">Изменить максимальную цену</span>
                                 </button>
                         </fieldset>
-                        <button class="button submit-button" type="submit">Применить</button>
-                        <button class="button reset-button" type="reset">Сбросить</button>
+                        <div class="button-wrapper">
+                            <button class="submit-button" type="submit">Применить</button><br>
+                            <button class="reset-button" type="reset">Сбросить</button>
+                        </div>
                     </form>
                 </section>
             </div>
@@ -164,40 +166,44 @@
                         <p class="rating">Рейтинг: <span class="rating-value">8,9</span></p>
                     </li>
                     </ul>
-                    <button class="button button-upload" type="submit">Загрузить ещё</button>
+                    <div class="button-upload-wrapper">
+                        <button class="button button-upload" type="submit">Загрузить ещё</button>
+                    </div>
                 </form>
             </section>
             <section class="pagination">
-                <ul class="pagination-list">
-                    <li class="pagination-item">
-                        <a class="pagination-link pagination-current">1</a>
-                    </li>
-                    <li class="pagination-item">
-                        <a class="pagination-link" href="http://#">2</a>
-                    </li>
-                    <li class="pagination-item">
-                        <a class="pagination-link" href="http://#">3</a>
-                    </li>
-                    <li class="pagination-item">
-                        <a class="pagination-link" href="http://#">4</a>
-                    </li>
-                    <li class="pagination-item">
-                        <a class="pagination-link" href="http://#">...</a>
-                    </li>
-                    <li class="pagination-item">
-                        <a class="pagination-link" href="http://#">10</a>
-                    </li>
-                </ul>
+                <div class="pagination-wrapper">
+                    <ul class="pagination-list">
+                        <li class="pagination-item">
+                            <a class="pagination-link pagination-current">1</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a class="pagination-link" href="http://#">2</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a class="pagination-link" href="http://#">3</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a class="pagination-link" href="http://#">4</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a class="pagination-link" href="http://#">...</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a class="pagination-link" href="http://#">10</a>
+                        </li>
+                    </ul>
 
-                <form class="hotel-choise-value" action="https://echo.htmlacademy.ru" method="post">
-                    <label сlass="label-choise" for="select-choise">Гостиниц на странице:</label>
-                    <select class="select-control" name="hotel-choise" id="select-choise">
-                        <option class="control-item" value="2">2</option>
-                        <option class="control-item" value="4" selected>4</option>
-                        <option class="control-item" value="6">6</option>
-                    </select>
-                    <button class="visually-hidden" type="submit">Показать</button>
-                </form>
+                    <form class="hotel-choise-value" action="https://echo.htmlacademy.ru" method="post">
+                        <label сlass="label-choise" for="select-choise">Гостиниц на странице:</label>
+                        <select class="select-control" name="hotel-choise" id="select-choise">
+                            <option class="control-item" value="2">2</option>
+                            <option class="control-item" value="4" selected>4</option>
+                            <option class="control-item" value="6">6</option>
+                        </select>
+                        <button class="visually-hidden" type="submit">Показать</button>
+                    </form>
+                </div>
             </section>
             <section class="subscribe-catalog">
                 <div class="subscribe-wrapper">
