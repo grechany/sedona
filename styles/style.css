@@ -33,18 +33,11 @@ body {
 ol, ul {
     list-style: none;
     padding: 0;
+    text-decoration: none;
 }
 
 h1, h2 {
     margin: 0;
-}
-
-.button {
-    background-color: #756257;
-    color: #FFFFFF;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
 }
 
 /*Шапка*/
@@ -299,6 +292,24 @@ h1, h2 {
     display: flex;
 }
 
+.sorting-form-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sorting-value {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 39px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.sorting-button {
+    display: flex;
+}
+
 /*Карточки гостиниц*/
 .cards-list {
     margin: 0 auto;
@@ -307,6 +318,98 @@ h1, h2 {
     column-gap: 18px;
     row-gap: 10px;
     grid-template-columns: repeat(3, 340px);
+}
+
+.cards-item {
+    padding: 20px;
+}
+
+.cards-photo {
+    margin-bottom: 16px;
+}
+
+.cards-title {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+}
+
+.cards-desctiption-wrapper {
+    margin-top: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cards-desctiption {
+    margin-top: 0;
+    margin-bottom: 16px;
+    width: 133px;
+}
+
+.button-card {
+    margin-top: 0;
+    margin-bottom: 16px;
+    width: 133px;
+    height: 37px;
+    border-radius: 4px;
+    background-color: #756257;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.button-favorites {
+    margin-top: 0;
+    margin-bottom: 16px;
+    width: 140px;
+    height: 37px;
+    background-color: #83B3D3;
+    color: #FFFFFF;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+}
+
+.button-favorites-current {
+    margin-top: 0;
+    margin-bottom: 16px;
+    width: 140px;
+    height: 37px;
+    background-color: #7DB54F;
+    color: #FFFFFF;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+}
+
+.rating-wrapper {
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-card-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating-wrapper>p {
+    margin: 0;
 }
 
 .button-upload-wrapper {
