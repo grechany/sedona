@@ -975,3 +975,180 @@ img {
     color: #000000;
     margin-bottom: 45px;
 }
+
+/*Modal window*/
+.modal-container-close {
+    display: none;
+}
+
+.modal-container {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(242, 242, 242, 0.8);
+}
+
+.modal {
+    width: 715px;
+    min-height: 560px;
+    background-color: #FFFFFF;
+    position: relative;
+    box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
+    border-radius: 30px;
+    padding: 70px;
+    padding-top: 62px;
+    margin: 0 auto;
+    margin-top: 396px;
+    position: relative;
+}
+
+.modal-title {
+    margin: 0;
+    margin-bottom: 59px;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.modal-input {
+    display: flex;
+    justify-content: space-between;
+    width: 575px;
+    padding-bottom: 40px;
+}
+
+.modal-input__label {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 40px;
+    align-self: center;
+}
+
+.modal-input__field {
+    width: 420px;
+    height: 50px;
+    background: #F2F2F2;
+    border: none;
+    border-radius: 4px;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 40px;
+    padding: 1px 19px;
+    background-image: url(../images/icons/date.svg);
+    background-repeat: no-repeat;
+    background-position: center right 20px;
+}
+
+.input-error {
+    position: absolute;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+    color: #FF5757;
+}
+
+.adult-input {
+    width: 288px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.children-input {
+    width: 230px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.input-number {
+    width: 133px;
+    height: 50px;
+    background: #F2F2F2;
+    border: none;
+    border-radius: 4px;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 40px;
+    padding: 1px 50px;
+    text-align: center;
+}
+
+.input-number::-webkit-inner-spin-button,
+.input-number::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input-form {
+    display: flex;
+    width: 133px;
+    position: relative;
+}
+
+
+.button-input {
+    width: 40px;
+    height: 50px;
+    border: none;
+    border-radius: 4px;
+    background: #F2F2F2;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.button-minus {
+    background-image: url(../images/icons/minus.svg); 
+}
+
+.button-plus {
+    background-image: url(../images/icons/plus.svg);
+    left: 65%;
+}
+
+
+.modal-close-button {
+    position: absolute;
+    top: 10%;
+    left: 83%;
+    width: 53px;
+    height: 53px;
+    border: none;
+    background-color: #F2F2F2;
+    border-radius: 50%;
+    background-image: url("../images/icons/close.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.modal-form__button {
+    width: 575px;
+    height: 60px;
+    background: #83B3D3;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
