@@ -1,3 +1,3 @@
-Project «Barbershop». I have studied:
+Project «Sedona». I have studied:
 
-• HTML • Git • Linux • CSS • Github • Figma
+• HTML • CSS • Flex • Grid
