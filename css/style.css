@@ -112,7 +112,7 @@ img {
     position: relative;
 }
 
-.user-menu__link-count-icon {
+.user-menu__count-icon {
     display: block;
     padding: 3px;
     width: 20px;
@@ -129,6 +129,10 @@ img {
     position: absolute;
     top: 20%;
     left: 50%;
+}
+
+.user-menu__count-icon-close {
+    display: none;
 }
 
 .navigation__button {
@@ -181,11 +185,11 @@ img {
 
 
 /*Main*/
-.page__main {
+.page-main {
     flex-grow: 1;
 }
 
-.main__promo {
+.main-promo {
     min-height: 484px;
     background-color: #83B3D3;
     background-repeat: no-repeat;
@@ -430,6 +434,7 @@ img {
 
 .subscribe-form__button:hover {
     background-color: #68A2CA;
+    cursor: pointer;
 }
 
 .subscribe-form__button:active {
@@ -442,7 +447,7 @@ img {
 }
 
 /*Footer*/
-.page__footer {
+.page-footer {
     min-height: 120px;
     display: flex;
     justify-content: space-between;
@@ -591,6 +596,7 @@ img {
 
 .filter-reset:hover {
     opacity: 0.6;
+    cursor: pointer;
 }
 
 .filter-reset:active {
@@ -815,6 +821,7 @@ img {
 /*Range slider styleguide*/
 .slider-thumb:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
   }
 
 .slider-thumb:focus {
@@ -868,6 +875,7 @@ img {
 /*Filter buttons styleguide*/
 .filter-submit:hover {
     background: #68A2CA;
+    cursor: pointer;
 }
 
 .filter-submit:focus {
@@ -1276,6 +1284,7 @@ img {
 .pagination-link:hover,
 .pagination__button:hover {
     background: #68A2CA;
+    cursor: pointer;
 }
 
 .pagination-link:active,
@@ -1379,9 +1388,11 @@ img {
 .modal-input__field {
     width: 420px;
     height: 50px;
-    background: #F2F2F2;
     border: none;
     border-radius: 4px;
+    background-color: #F2F2F2;
+    color: #000000;
+    opacity: 0.6;
     font-family: 'PT Sans';
     font-style: normal;
     font-weight: 700;
@@ -1393,13 +1404,21 @@ img {
     background-position: center right 20px;
 }
 
-.input-error {
+.input-message-close {
+    display: none;
+}
+
+.input-message {
     position: absolute;
     font-family: 'PT Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 40px;
+    transform: translateX(155px) translateY(44px);
+}
+
+.input-error {
     color: #FF5757;
 }
 
@@ -1443,9 +1462,8 @@ img {
     position: relative;
 }
 
-
 .button-input {
-    width: 40px;
+    width: 45px;
     height: 50px;
     border: none;
     border-radius: 4px;
@@ -1464,6 +1482,18 @@ img {
     left: 65%;
 }
 
+.children-info {
+    margin-right: 5px;
+    width: 25px;
+    height: 25px;
+    background-color: #83B3D3;
+    align-self: center;
+    border: none;
+    border-radius: 50%;
+    background-image: url(../images/icons/info.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 .modal-close-button {
     position: absolute;
@@ -1476,7 +1506,7 @@ img {
     border-radius: 50%;
     background-image: url("../images/icons/close.svg");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 50% 50%;
 }
 
 .modal-form__button {
@@ -1495,3 +1525,64 @@ img {
     text-transform: uppercase;
 }
 
+/*Modal window styleguide*/
+.modal-close-button:hover {
+    background-color: #E6E6E6;
+    cursor: pointer;
+}
+
+.modal-close-button:focus {
+    outline-color: #83B3D3;
+    background-color: #E6E6E6;
+}
+
+.modal-close-button:active {
+    background-color: #E6E6E6;
+    opacity: 0.3;
+}
+
+.modal-input__field:hover {
+    background-color: #E6E6E6;
+    cursor: pointer;
+}
+
+.modal-input__field:focus {
+    outline-color: #83B3D3;
+    opacity: 1;
+}
+
+.modal-input__field:active {
+    background: #FFFFFF;
+    color: #000000;
+    outline-color: #000000;
+}
+
+.input-number:focus {
+    outline: none;
+}
+
+.button-input:hover {
+    cursor: pointer;
+}
+
+.button-input:focus {
+    outline-color: #83B3D3;
+}
+
+.children-info:hover,
+.modal-form__button:hover {
+    background-color: #68A2CA;
+    cursor: pointer;
+}
+
+.children-info:focus,
+.modal-form__button:focus {
+    background-color: #68A2CA;
+    outline-color: #756257;
+}
+
+.modal-form__button:active {
+    background-color: #68A2CA;
+    color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
