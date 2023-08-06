@@ -328,5 +328,59 @@
           </svg>
         </a>
     </footer>
+
+    <div class="modal-container modal-container-close">
+      <div class="modal">
+        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+  
+        <form class="modal-form" action="https://echo.htmlacademy.ru" method="get">
+          <div class="modal-input">
+            <label class="modal-input__label" for="date-in">Дата заезда:</label>
+            <input class="modal-input__field" type="date" name="date-in" id="date-in" placeholder="Укажите дату" required>
+            <span class="input-message input-message-close input-error" id="error-in">Мы не можем отправить вас в прошлое</span>
+          </div>
+          <div class="modal-input">
+            <label class="modal-input__label" for="date-out">Дата выезда:</label>
+            <input class="modal-input__field" type="date" name="date-out" id="date-out" placeholder="Укажите дату" required>
+            <span class="input-message input-message-close">На эти даты есть свободные номера. Пока есть.</span>
+          </div>
+          <div class="modal-input">
+            <div class="adult-input">
+              <label class="modal-input__label" for="adult">Взрослые:</label>
+              <div class="input-form">
+                <button class="button-input button-minus minus-adult" type="button">
+                  <span class="visually-hidden">Уменьшить количество</span>
+                </button>
+                <input class="input-number" type="number" name="adult" id="adult" placeholder="2">
+                <button class="button-input button-plus plus-adult" type="button">
+                  <span class="visually-hidden">Увеличить количество</span>
+                </button>
+              </div>
+            </div>
+            <div class="children-input">
+              <label class="modal-input__label" for="children">Дети:</label>
+              <button class="children-info" type="button">
+                <span class="visually-hidden">информация</span>
+              </button>
+              <div class="input-form">
+                <button class="button-input button-minus minus-child" type="button">
+                  <span class="visually-hidden">Уменьшить количество</span>
+                </button>
+                <input class="input-number" type="number" name="children" id="children" placeholder="1">
+                <button class="button-input button-plus plus-child" type="button">
+                  <span class="visually-hidden">Увеличить количество</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <button class="modal-form__button" type="submit">Найти</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="./script.js" defer></script>
 </body>
 </html>

@@ -126,7 +126,7 @@
         <h2 class="visually-hidden">Поиск гостиниц</h2>
         <p class="section-title search-title">Заинтересовались?</p>
         <p class="section-description search-description">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a href="#" class="search-button">Поиск гостиницы в Седоне</a>
+        <a class="search-button" href="#">Поиск гостиницы в Седоне</a>
       </section>
       <section class="subscribe">
         <h2 class="section-title subscribe-title">Подпишитесь на рассылку</h2>
@@ -198,12 +198,12 @@
         <form class="modal-form" action="https://echo.htmlacademy.ru" method="get">
           <div class="modal-input">
             <label class="modal-input__label" for="date-in">Дата заезда:</label>
-            <input class="modal-input__field" type="text" name="date-in" id="date-in" placeholder="Укажите дату" required>
-            <span class="input-message input-message-close input-error">Мы не можем отправить вас в прошлое</span>
+            <input class="modal-input__field" type="date" name="date-in" id="date-in" placeholder="Укажите дату" required>
+            <span class="input-message input-message-close input-error" id="error-in">Мы не можем отправить вас в прошлое</span>
           </div>
           <div class="modal-input">
             <label class="modal-input__label" for="date-out">Дата выезда:</label>
-            <input class="modal-input__field" type="text" name="date-out" id="date-out" placeholder="Укажите дату" required>
+            <input class="modal-input__field" type="date" name="date-out" id="date-out" placeholder="Укажите дату" required>
             <span class="input-message input-message-close">На эти даты есть свободные номера. Пока есть.</span>
           </div>
           <div class="modal-input">
@@ -225,11 +225,11 @@
                 <span class="visually-hidden">информация</span>
               </button>
               <div class="input-form">
-                <button class="button-input button-minus" type="button">
+                <button class="button-input button-minus minus-child" type="button">
                   <span class="visually-hidden">Уменьшить количество</span>
                 </button>
                 <input class="input-number" type="number" name="children" id="children" placeholder="1">
-                <button class="button-input button-plus" type="button">
+                <button class="button-input button-plus plus-child" type="button">
                   <span class="visually-hidden">Увеличить количество</span>
                 </button>
               </div>
